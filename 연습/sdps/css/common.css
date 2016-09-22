@@ -1,0 +1,315 @@
+@charset "euc-kr";
+
+
+/* 페이지공통 스타일 설정 */
+body, table, td, input, textarea, select, li, dd {font:12px "돋움",dotum,"굴림", gulim,sans-serif, arial; color:#595959; line-height:1.2;}
+select, input, option, textarea {vertical-align:middle; font-family: "돋움",dotum,"굴림", gulim,sans-serif,arial;  color:#595959;}
+h1, h2, h3, h4 , h5, h6{font-size:12px;}
+
+/* 텍스트 */
+a{color:#595959; text-decoration:none}
+a:hover{color:#222;text-decoration:underline}
+p,a,h2,h3{word-break:break-all; white-space:break-word;}
+
+/* 정렬 */
+.posi_abs{position:absolute}
+.posi_rel{position:relative}
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clearfix{clear:both;}
+.cl_elem{clear:left; font-size:0;height:0;}
+.cr_elem{clear:right; font-size:0;height:0;}
+.cb_elem{clear:both; font-size:0;height:0;}
+
+.left {text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
+
+.line_vtop {vertical-align:top}
+.line_vmid {vertical-align:middle}
+
+/* 기타요소(텍스트요소) 설정 */
+.hdtxt{font-size:0; text-indent:-9999px;}
+.hideObj{width:0; height:0; visibility:hidden; text-indent:-9999px;}
+.acc_tag{visibility:hidden; position:absolute; top:-99999px;left:-99999px; font-size:0; line-height:0}
+
+
+/* form 기본설정 */
+.inp_txt{padding:5px 3px 0; border:1px solid ##d2d2d2}
+.inp_chk, .inp_rdo{width:13px; height:13px}
+.tarea{padding:3px 3px 0; border:1px solid ##d2d2d2}
+.input_trans { border:0 none; background:transparent; color:#F35C11; font-weight:bold;}
+
+/* 익스용 스크롤바 스타일 정의 */
+.scroll,textarea,select {
+		scrollbar-face-color: #d9d9d9; 
+		scrollbar-shadow-color:#d9d9d9; 
+		scrollbar-highlight-color:#d9d9d9; 
+		scrollbar-3dlight-color: #d9d9d9; 
+		scrollbar-darkshadow-color: #d9d9d9; 
+		scrollbar-track-color: #ebebeb; 
+		scrollbar-arrow-color: #8f8f8f;
+}
+/* [wa2013] 2013.01.15 doh : 스킵내비게이션 index 설정 */
+#accessibilityMenu {position:relative; z-index:5000000;}
+#accessibilityMenu a,#accessibilityMenu dt {position:absolute; display:block; width:100%; left:0; text-align:center; top:-10000px; z-index:5000000; font-size:1.3em}
+#accessibilityMenu a:hover, #accessibilityMenu a:focus, #accessibilityMenu a:active{position: absolute; top: 0; padding: 15px 0; font-weight:bold; color:#fff; background:#595959; z-index:5000000;}
+
+
+/* 가이드 text tab - bigsize */
+/* 2012-07-24 수정 */
+.text_bigtab{width:100%; overflow:hidden;border-left:1px solid #c9c9c9;background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_bigtab_new.gif') repeat-x 0 3px;}
+.text_bigtab li{float:left;display:inline-block;}
+.text_bigtab li a, .text_bigtab li span{display:inline-block; cursor:pointer;}
+.text_bigtab li a{padding:0 20px 0 0;border:1px solid #c9c9c9;border-top:2px solid #9a96ad;border-left:none; background:#f7f7f8;letter-spacing:-1px;color:#595959;font-size:13px;font-weight:bold; text-decoration:none;vertical-align:top}
+.text_bigtab li a span{height:22px; margin-left:-3px; padding:8px 0 0 20px; }												
+.text_bigtab li a:hover {color:#222; } 
+.text_bigtab li.active a {border-top:2px solid #58595a;border-bottom:1px solid #fff; background:#fff; color:#d80546; }
+
+/*
+.text_bigtab{width:100%; background:url('/lgekr/asset/images/new_common/global/bg_text_bigtab.gif') no-repeat -40px top; overflow:hidden}
+.text_bigtab li{float:left; margin-right:2px}
+.text_bigtab li a, .text_bigtab li span{display:inline-block; cursor:pointer}
+.text_bigtab li a{margin-left:3px; padding:0 20px 0 0; background:url('/lgekr/asset/images/new_common/global/bg_text_bigtab.gif') no-repeat right top; letter-spacing:-1px;  color:#848586; font-size:13px; font-weight:bold; text-decoration:none; vertical-align:top}
+.text_bigtab li a span{height:22px; margin-left:-3px; padding:8px 0 0 20px;  background:url('/lgekr/asset/images/new_common/global/bg_text_bigtab.gif') no-repeat left top}
+.text_bigtab li a:hover, .text_bigtab li.active a{background:url('/lgekr/asset/images/new_common/global/bg_text_bigtab.gif') no-repeat right -45px; color:#d80546; }
+.text_bigtab li a:hover span, .text_bigtab li.active a span{background:url('/lgekr/asset/images/new_common/global/bg_text_bigtab.gif') no-repeat left -45px}
+*/
+/* 트롬주요기술 text tab - bigsize */
+.text_bigtab_2{width:100%; overflow:hidden}
+.text_bigtab_2 li{float:left; margin:5px 5px 0 0}
+.text_bigtab_2 li a, .text_bigtab_2 li span{display:inline-block; cursor:pointer}
+.text_bigtab_2 li a{margin-left:3px; padding:0 20px 0 0; background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_bigtab_2.gif') no-repeat right top; letter-spacing:-1px;  color:#848586; font-size:13px; font-weight:bold; text-decoration:none; vertical-align:top}
+.text_bigtab_2 li a span{height:22px; margin-left:-3px; padding:8px 0 0 20px;  background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_bigtab_2.gif') no-repeat left top}
+.text_bigtab_2 li a:hover, .text_bigtab_2 li.active a{background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_bigtab_2.gif') no-repeat right -45px; color:#fff; }
+.text_bigtab_2 li a:hover span, .text_bigtab_2 li.active a span{background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_bigtab_2.gif') no-repeat left -45px}
+
+/* 가이드 text tab - smallsize */
+/* 2012-07-24 수정 */
+.text_smltab{width:100%; overflow:hidden;background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_smltab.gif') no-repeat -300px 5px;}
+.text_smltab li{float:left; margin-right:0;}
+.text_smltab li a{display:inline-block;padding:0 0 0 20px;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_text_smltab.gif') no-repeat right -70px; font-size:12px; text-decoration:none; vertical-align:top;}
+.text_smltab li a span{display:inline-block; cursor:pointer;padding:8px 20px 8px 0;}
+.text_smltab li.first a{border-left:1px solid #dbdbdb;/*background:none;*/}
+.text_smltab li.last a {border-right:1px solid #dbdbdb;background:none;}
+.text_smltab li a:hover, .text_smltab li.active a{background:#d80546;color:#fff; font-weight:bold;letter-spacing:-1px;}
+.text_smltab.type2 li a{padding-left:16px}
+.text_smltab.type2 li a span{padding-right:16px}
+
+/* 디자인 셀렉트 박스 */
+.selectBox {position:relative; height:18px; border:1px solid #ccc; vertical-align:middle; text-align:left;background:#fff;}
+.bbs_search.washer a:focus {outline:1px dotted silver;} /* [wa2013] 2013.01.08 jh : 키보드 포커스 관련 추가 */
+.selectBox-label {display:inline-block; padding:3px 0 0 5px; font-size:11px;}
+.selectBox-arrow {position:absolute; top:0; right:0; width:21px; height:18px; display:inline-block; background:url('http://www.lge.com/lgekr/asset/images/new_common/board/bg_select_arrow.gif') no-repeat 0 0;}
+.selectBox-dropdown-menu {position:absolute; z-index:9999; overflow:auto; min-height:1em; max-height:200px; border:1px solid #d6d6d6; background:#fff;}
+.selectBox-dropdown-menu li a {display:block; cursor:default; padding:2px 0 1px 5px;font-size:11px;}
+.selectBox-dropdown-menu li a:hover {background:#eee; text-decoration:none;}
+.selectBox-disabled {background:#f5f5f5;}
+.selectBox-disabled .selectBox-label {color:#aaa;}
+
+/* align_means 제품목록, 컨텐츠 인덱스 */
+.align_means {height:27px; width:100%;}
+.align_means div {height:27px; width:157px; float:right;}
+.align_means label {float:left; padding-top:3px;}
+.align_means select {float:right; width:98px; height:20px; font-size:12px; border:solid 1px #dbdbdb;}
+.align_means .selectBox {position:relative; float:right; height:20px; margin-bottom:5px; border:1px solid #d6d6d6; cursor:default; line-height:20px;}
+.align_means .selectBox:hover {text-decoration:none;}
+.align_means .selectBox-label {padding:0 0 0 10px;}
+.align_means .selectBox-arrow {position:absolute; top:0; right:0; width:21px; height:100%; border-left:1px solid #d6d6d6; background:url('http://www.lge.com/lgekr/asset/images/new_products/pboard/btn_selectbox_arrow.gif') no-repeat 50% 50%;}
+.align_select-selectBox-dropdown-menu {position:absolute; z-index:9999; overflow:auto; min-height:1em; max-height:200px; border:1px solid #d6d6d6; background:#fff;}
+.align_select-selectBox-dropdown-menu li a {display:block; cursor:default; margin:1px 0; padding:2px 0 2px 10px;}
+.align_select-selectBox-dropdown-menu li a:hover {background:#eee; text-decoration:none;}
+
+
+/* 레이어 팝업 */
+.layerpopup {z-index:100; border-right:3px solid #c5c5c5; border-bottom:3px solid #c5c5c5;}
+.layerpopup .inner {border:2px solid #3d3e3f; background:#fff;}
+.layerpopup .lp_title {background:#3d3e3f; border-bottom:2px solid #d80546; color:#fff; font-size:14px; font-weight:bold;}
+.layerpopup .lp_title strong {display:block; padding:8px 10px;}
+.layerpopup .lp_cont {padding:10px 10px 10px;}
+.layerpopup .lp_close {position:absolute; top:12px; right:13px; display:block; overflow:hidden; width:11px; height:11px; background:url('http://www.lge.com/lgekr/asset/images/new_common/global/btn_layerpopup_close.gif') no-repeat 0 0; text-indent:-9999px;}
+.layerpopup.notit .lp_cont {padding-top:30px;}
+.layerpopup.notit .lp_close {background-position:0 -11px;}
+
+#scrap {width:320px;}
+#scrap .lp_cont .txt_1 {padding:30px 0 40px; font-weight:bold; text-align:center; line-height:18px;}
+#scrap .lp_cont .txt_1 strong {color:#d80546;}
+#scrap .lp_cont .txt_2 {padding:20px 0 10px; background:url('http://www.lge.com/lgekr/asset/images/new_common/global/bg_dotted_bar_hor.gif') repeat-x 0 0; text-align:center;}
+#thumb_zoom {position:static}
+#thumb_zoom .lp_cont .lp_close {position:static; width:auto; height:auto; background:none; text-indent:0;}
+#thumb_zoom .lp_cont img {max-width:600px; max-height:600px;}
+
+/* 레이어 팝업 - 브라우저 버전 알림*/ 
+.notice_browser { position:absolute; left:50%; top:0; margin-left:-480px; width:960px; z-index:1100; }
+.notice_browser .lp_cont { overflow:hidden; padding:22px 0 19px 20px; }
+.notice_browser .lp_cont span { display:inline-block; }
+.notice_browser .lp_cont span.img_ie { padding-left:24px; }
+.notice_browser .lp_cont span.browser_down { padding-left:14px; }
+
+/* 윈도우 팝업 공통 */
+.body_pop{background:none;}
+#pop_wrap{width:410px;background:#FFFFFF;}
+#pop_wrap1{float:left;}	/* [LGA]수정 */
+#pop_wrap_536{width:536px;}
+#pop_wrap_540{width:540px;}
+#pop_wrap_630{width:630px;}
+#pop_head{width:100%; height:53px; background:#222; border-top:solid 2px #7e7e7e;}
+#pop_head1{alignment-adjust:auto; border:none; text-align:left;}
+#pop_head h1{float:left; padding:19px 0 0 20px;}
+#pop_head p{float:right; padding:15px 19px 0 0;}
+#pop_content{width:100%; border-top:solid 2px #bf003b; border-bottom:solid 1px #bf003b; padding:20px 0;}
+.pop_inner_box {padding:0 20px;} /* [LGA]추가 */
+#pop_footer{ height:40px; background:#222;}
+#pop_footer .pop_copy{float:left; padding:15px 0 0 20px;} 
+#pop_footer .pop_close{float:right; padding:10px 10px 0 0;}
+
+.pop_box_top{width:370px; background:url('http://www.lge.com/lgekr/asset/images/utils/etc/bg_pop_top.gif') no-repeat 0 top; padding-top:17px; margin:0 auto;}
+.pop_box_top.sp_topbtm{margin-top:10px;}
+.pop_box_btm{width:330px; background:url('http://www.lge.com/lgekr/asset/images/utils/etc/bg_pop_btm.gif') no-repeat 0 bottom; padding:0 20px 18px 20px; line-height:18px;}
+
+/* [LGA] 로그인 팝업 */
+.pop_login_box {position:relative; background:url(/lgekr/asset_acc/images/popup/bg_login_box.gif) no-repeat 0 0; margin:0 0 20px 20px; padding:30px 30px 0 20px;}
+.pop_login_box p.pop_id {margin-bottom:5px;}
+.pop_login_box p.pop_id img{padding:5px 10px 0 0;}
+.pop_login_box p.pop_pw img {padding-top:5px;}
+.pop_login_box p.pop_id span, .pop_login_box p.pop_pw span {margin-left:10px;}
+.pop_login_box input.pop_txt {padding:3px 0 3px 2px; border:1px solid #dbdbdb;}
+.pop_login_box p.btn_pop_login {position:absolute; top:30px; right:29px; }
+.pop_login_box p.pop_btn {float:right;margin:7px 0 17px 0;}
+.pop_login_box p.txt_login {clear:both; padding:12px 0 12px 0; line-height:18px; letter-spacing:-1px;font-size:11px;}
+.pop_login_box p.txt_login span {font-size:11px; color:#d80546; font-weight:bold;}
+
+.login_certify_no {height:198px; padding:20px 18px 0 20px; background:url(/lgekr/asset_acc/images/popup/bg_login_no.gif) no-repeat 0 0;}
+.login_certify_no p strong {font-size:14px; letter-spacing:-1px; line-height:18px;}
+.login_certify_no p strong span {color:#d80546;}
+.login_certify_no p.txt_lobin_certify {padding-top:28px; font-weight:bold;}
+
+.pop_reentrance_box {padding:14px 10px 14px 20px; background:url(/lgekr/asset_acc/images/popup/bg_reentrance.gif) no-repeat 0 0; line-height:16px; letter-spacing:-1px;}
+.pop_reentrance_box strong {color:#d80546;}
+.btn_center_2 {padding-top:15px; text-align:center;}
+
+.pop_pw_change {padding:17px 20px; background:url(/lgekr/asset_acc/images/popup/bg_pw_change.gif) no-repeat 0 0; line-height:16px; letter-spacing:-1px;}
+
+.txt_inquire {padding:18px 0 18px 20px; border-top:2px solid #7e7e7e; border-bottom:1px solid #e3e3e3; background-color:#f7f7f7;}
+.txt_inquire dl {padding-bottom:8px;}
+.txt_inquire dl dt {float:left; line-height:18px; padding:3px 7px 0 0;}
+.txt_inquire p {padding-bottom:8px;}
+.txt_inquire ul {color:#595959; line-height:16px; letter-spacing:-1px;}
+
+.pop_email_change {padding:20px; background:url(/lgekr/asset_acc/images/popup/bg_email_change.gif) no-repeat 0 0; line-height:16px;}
+.pop_email_change p {letter-spacing:-1px;}
+.pop_email_change p strong span {color:#d80546;}
+.pop_email_change .pop_site {padding-top:18px;}
+.pop_email_change .pop_site h2 {padding-top:10px;color:#d80546;}
+.pop_email_change .pop_site p {padding:8px 0;}
+br {letter-spacing:0;}
+/*
+ * 사용상 주의 * 
+   여기에 정의된 마진과 패딩값은 사용하는것을 자제하기 바랍니다. 오직 1회용 페이지를 위해 사용하십시요.
+ *
+*/
+
+/* 마진 */
+.noma{margin:0}
+.mt01{margin-top:1px} .mt02{margin-top:2px} .mt03{margin-top:3px} .mt04{margin-top:4px} .mt05{margin-top:5px}
+.mt06{margin-top:6px} .mt07{margin-top:7px} .mt08{margin-top:8px} .mt09{margin-top:9px} .mt10{margin-top:10px}
+.mt11{margin-top:11px} .mt12{margin-top:12px} .mt13{margin-top:13px} .mt14{margin-top:14px} .mt15{margin-top:15px}
+
+.mb01{margin-bottom:1px} .mb02{margin-bottom:2px} .mb03{margin-bottom:3px} .mb04{margin-bottom:4px} .mb05{margin-bottom:5px}
+.mb06{margin-bottom:6px} .mb07{margin-bottom:7px} .mb08{margin-bottom:8px} .mb09{margin-bottom:9px} .mb10{margin-bottom:10px}
+.mb11{margin-bottom:11px} .mb12{margin-bottom:12px} .mb13{margin-bottom:13px} .mb14{margin-bottom:14px} .mb15{margin-bottom:15px}
+.mb30{margin-bottom:30px}
+
+.ml01{margin-left:1px} .ml02{margin-left:2px} .ml03{margin-left:3px} .ml04{margin-left:4px} .ml05{margin-left:5px}
+.ml06{margin-left:6px} .ml07{margin-left:7px} .ml08{margin-left:8px} .ml09{margin-left:9px} .ml10{margin-left:10px}
+.ml11{margin-left:11px} .ml12{margin-left:12px} .ml13{margin-left:13px} .ml14{margin-left:14px} .ml15{margin-left:15px}
+
+.mr01{margin-right:1px} .mr02{margin-right:2px} .mr03{margin-right:3px} .mr04{margin-right:4px} .mr05{margin-right:5px}
+.mr06{margin-right:6px} .mr07{margin-right:7px} .mr08{margin-right:8px} .mr09{margin-right:9px} .mr10{margin-right:10px}
+.mr11{margin-right:11px} .mr12{margin-right:12px} .mr13{margin-right:13px} .mr14{margin-right:14px} .mr15{margin-right:15px}
+
+/* 패딩 */
+.nopa{padding:0}
+.pt01{padding-top:1px} .pt02{padding-top:2px} .pt03{padding-top:3px} .pt04{padding-top:4px} .pt05{padding-top:5px}
+.pt06{padding-top:6px} .pt07{padding-top:7px} .pt08{padding-top:8px} .pt09{padding-top:9px} .pt10{padding-top:10px}
+.pt11{padding-top:11px} .pt12{padding-top:12px} .pt13{padding-top:13px} .pt14{padding-top:14px} .pt15{padding-top:15px}
+
+.pb01{padding-bottom:1px} .pb02{padding-bottom:2px} .pb03{padding-bottom:3px} .pb04{padding-bottom:4px} .pb05{padding-bottom:5px}
+.pb06{padding-bottom:6px} .pb07{padding-bottom:7px} .pb08{padding-bottom:8px} .pb09{padding-bottom:9px} .pb10{padding-bottom:10px}
+.pb11{padding-bottom:11px} .pb12{padding-bottom:12px} .pb13{padding-bottom:13px} .pb14{padding-bottom:14px} .pb15{padding-bottom:15px}
+
+.pl01{padding-left:1px} .pl02{padding-left:2px} .pl03{padding-left:3px} .pl04{padding-left:4px} .pl05{padding-left:5px}
+.pl06{padding-left:6px} .pl07{padding-left:7px} .pl08{padding-left:8px} .pl09{padding-left:9px} .pl10{padding-left:10px}
+.pl11{padding-left:11px} .pl12{padding-left:12px} .pl13{padding-left:13px} .pl14{padding-left:14px} .pl15{padding-left:15px}
+
+.pr01{padding-right:1px} .pr02{padding-right:2px} .pr03{padding-right:3px} .pr04{padding-right:4px} .pr05{padding-right:5px}
+.pr06{padding-right:6px} .pr07{padding-right:7px} .pr08{padding-right:8px} .pr09{padding-right:9px} .pr10{padding-right:10px}
+.pr11{padding-right:11px} .pr12{padding-right:12px} .pr13{padding-right:13px} .pr14{padding-right:14px} .pr15{padding-right:15px}
+
+
+
+/* [wa2103] 2012.12.20 doh : add css */
+	/* hidden text or contents, skip navigation or some like skips */
+table caption, legend {text-indent:-9999px; height:0; line-height:0; font-size:0; overflow:hidden; visibility:visible;}
+table caption {display:table-caption;}
+.hidedesc, .hide_conts {position:absolute;top:-99999px;left:-99999px;width:0;height:0;font-size:0;line-height:0;}
+.acc_tag {visibility:visible;}
+.skip_navigation {position:absolute;left:-9999px;display:block;width:100%;height:25px;line-height:25px;text-align:center;font-size:18px;color:#000;background:#fafafa;border:1px solid #ddd;}
+.skip_navigation:hover, .skip_navigation:focus, .skip_navigation:active {left:0;text-decoration:none;font-weight:bold;z-index:10000;}
+	/* scrap button */
+.alt_scrap {position:absolute; top:100%; left:-999999px; width:300px; margin-top:20px; line-height:14px; overflow:hidden; overflow-y:auto; border:1px solid #ddd; padding:0 2px; font-size:11px;}
+.alt_scrap:hover, .alt_scrap:focus, .alt_scrap:active {}
+.infor_scrap {position:absolute; top:100%; left:0; width:300px; height:14px; padding:3px 2px 2px; line-height:15px; border:1px solid #ddd; display:none; font-size:11px; line-height:14px; background:#fff; text-decoration:none;}
+.put_urls {display:none;}
+	/* flash contents */
+.flash_wrapper {position:relative;}
+.flash_wrapper object {position:relative; z-index:0;}
+.flash_wrapper .flash_alt {position:absolute; width:100%; height:100%; overflow:hidden; background:#fff; left:-999999px; z-index:100;}
+.flash_wrapper .flash_alt.transparent {background:transparent none;}
+.flash_wrapper .flash_active .flash_alt {left:0;}
+.flash_wrapper .open_flash_alt,
+.flash_wrapper .close_flash_alt,
+.flash_wrapper .skip_flash_object {position:absolute; left:-999999px; bottom:1px; width:100%; height:30px; line-height:30px; vertical-align:middle; font-size:14px; font-weight:bold; background:#fafafa; color:#222; text-align:center; z-index:1000;}
+.flash_wrapper .open_flash_alt {bottom:auto; top:0;}
+.flash_wrapper .open_flash_alt:focus, .flash_wrapper .open_flash_alt:active, 
+.flash_wrapper .close_flash_alt:focus, .flash_wrapper .close_flash_alt:active, 
+.flash_wrapper .skip_flash_object:focus, .flash_wrapper .skip_flash_object:active {left:0;z-index:10000;}
+.flash_wrapper .flash_alt .close_flash_alt {display:none;}
+.flash_wrapper .flash_active .flash_alt .close_flash_alt {display:block;}
+.flash_wrapper .changeThisToObject .xml {display:none;}
+.flash_wrapper .changeThisToObject .btn_play {position:absolute; width:100%; height:61px; left:0; top:28%; cursor:pointer;}
+.flash_wrapper .changeThisToObject .btn_play img {display:block; margin:0 auto; cursor:pointer;}
+.skipped_flash {position:absolute; left:-999999px;}
+.flash_wrapper .afterFlash:focus {outline:0px solid #fff;}
+	/* new - layerpopup default position and display */
+.new_layer_wrapper {position:absolute; display:none; left:-999999px;}
+/* // [wa2103] 2012.12.20 doh : add css */
+
+/* [wa2013] 2012.12.29 EJ color값 수정 */
+.text_bigtab li a{color:#595959;}
+/* [wa2013] 2012.12.29 EJ 백그라운드 컬러 수정 */
+.text_smltab li a:hover, .text_smltab li.active a{background:#d80546;}
+/* [wa2013] 2012.12.29 jh : 명도대비 보정 */
+.text_smltab li a:hover, .text_smltab li.active a {background:#d80546;}
+
+/* [wa2013] 2013.01.04 doh : selectbox 모양의 링크 design */
+.tit_content .like_select_box  {float:right; width:140px; height:20px; margin-top:10px; overflow:visible;}
+.like_select_box {position:relative;}
+.like_select_box .button {display:block; width:123px; height:18px; border:1px solid #d6d6d6; padding:1px 6px 1px 9px; background:white none; text-align:left; text-decoration:none;}
+.like_select_box .button span {display:block; height:100%; width:123px; line-height:18px; background:url('http://www.lge.com/lgekr/asset/images/new_products/pboard/btn_selectbox_arrow.gif') no-repeat right center;}
+.like_select_box ul {display:none; position:absolute; top:21px; left:0; width:138px; border:1px solid #d6d6d6; padding:2px 0; background:white; z-index:100;}
+.like_select_box ul li {display:block; float:left; width:136px; height:20px; padding:1px; background:white;}
+.like_select_box ul li a {display:block; width:124px; padding:2px 2px 2px 10px; line-height:17px; background:white; text-decoration:none;}
+.like_select_box ul li a.disabled {cursor:default; background:#f2f2f2;}
+.like_select_box ul li a:hover, .align_means .right ul li a:focus {background:#eee;}
+.modal_cnt:focus {outline:0px solid #fff;}
+.scrapButton {vertical-align:top;}
+/* // [wa2013] 2013.01.04 doh : selectbox 모양의 링크 design */
+/* [wa2013] 2013.01.09 jh : focus 관련 */
+.selectBox:focus {outline:1px dotted #999;}
+
+/* [wa2013] 2013.01.10 EJ 스크랩버튼 수정 */
+.infor_scrap {left:auto; right:0; width:200px; }
+.like_select_box {z-index:100;}

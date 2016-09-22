@@ -1,0 +1,27 @@
+@charset "euc-kr";
+/* reset style [start] */
+*{ margin:0; padding:0;}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, big, cite, code,
+del, dfn, em, font, img, ins, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, input,select,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td 
+{margin: 0;padding: 0;} /* vertical-align: baseline; outline: 0; ie 외 브라우저 포커싱 사라지는 문제로 제거 */
+fieldset, img{border:0;}
+hr {display: none;}
+legend,caption { visibility:hidden; height:0; width:0; font-size:0; line-height:0; }
+li{list-style:none}
+blockquote, q {quotes: none;}
+/* remember to define focus styles! :focus {outline: 0;} */
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table{border-collapse:collapse; padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;} /* font-weight:normal */
+/* reset style [end] */

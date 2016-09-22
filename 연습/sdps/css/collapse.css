@@ -1,0 +1,10 @@
+.dbMenu{
+	width:150px
+}
+.dbMenu .subMenu{
+	background-image:url('../img/down.gif');
+	background-position:bottom right;
+}
+.dbMenu .click{
+	background-image:none;
+}
