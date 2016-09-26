@@ -140,10 +140,29 @@
 		<h1>Search</h1>
 		<!--<hr>-->
 		<!--<input type="text" value="webOS1.0" disabled>-->
-		<form class="form-inline">
-			<input type="text" class="form-control" size="50" placeholder="Information" required>
-			<button type="button" class="btn btn-danger">검색</button>
+		<form action="/search" class="form-inline" method="get">
+			<input type="text" class="form-control" size="50" placeholder="SW-PRS 검색" required>
+			<button type="button" class="btn btn-danger" href="http://naver.com">검색</button>
+			<!--<input id="q" aria-hidden="true" autocomplete="off" name="q" tabindex="-1" type="url" jsaction="mousedown:ntp.fkbxclk" style="opacity: 0;">-->
 		</form>
 	</div>
+	<!--<div class="mv-hide" id="most-visited">-->
+		<!--<div id="mv-tiles" style="width: 344px;">-->
+			<!--<iframe id="mv-single" src="chrome-search://most-visited/single.html?removeTooltip=%EC%9D%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%20%ED%91%9C%EC%8B%9C%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%8C"></iframe>-->
+		<!--</div>-->
+		<!--<div class="mv-noti-hide" id="mv-noti">-->
+			<!--<span id="mv-noti-msg">미리보기 이미지가 삭제되었습니다.</span>&nbsp;-->
+			<!--<span id="mv-noti-lks"><span id="mv-undo" tabindex="1">실행취소</span>&nbsp;-->
+				<!--<span id="mv-restore" tabindex="1">모두 복원</span>&nbsp;-->
+				<!--<div class="mv-x" id="mv-noti-x" tabindex="-1">-->
+					<!--<div class="mv-x-inner">-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</span>-->
+		<!--</div>-->
+		<!--<div class="mv-noti-hide" id="mv-noti-error">-->
+			<!--<span id="mv-noti-msg">미리보기 이미지를 삭제하는 중에 오류가 발생했습니다. Chrome이 온라인 상태여야 합니다.</span>-->
+		<!--</div>-->
+	<!--</div>-->
 </body>
 </html>
